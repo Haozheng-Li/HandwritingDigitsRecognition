@@ -55,7 +55,7 @@ def process_data():
     print('Model final training accuracy is {:.3f}%'.format(history.history['accuracy'][-1]*100))
 
     # Save model
-    model.save('NN_model.h5')
+    model.save('Model/NN_model.h5')
 
     # Draw figure
     draw_loss_figure(history)

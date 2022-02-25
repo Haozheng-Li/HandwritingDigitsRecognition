@@ -78,13 +78,13 @@ def process_data():
     print('CNN model final predict results are: {}'.format(predict_data))
 
     # Save data to csv
-    utils.save_predict_data(utils.PATH_NEURAL_NETWORK, predict_data, 21000)
+    utils.save_predict_data(utils.PATH_CNN, predict_data, 21000)
 
     # Show accuracy
     print('Model final training accuracy is {:.3f}%'.format(history.history['accuracy'][-1]*100))
 
     # Save model
-    model.save('CNN_model.h5')
+    model.save('Model/CNN_model.h5')
     
     # Draw figure
     draw_loss_figure(history)

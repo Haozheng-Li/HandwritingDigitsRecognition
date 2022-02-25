@@ -15,6 +15,7 @@ RESOLUTION = (28, 28)
 PIXEL_SIZE = 28 * 28
 
 PATH_NEURAL_NETWORK = 'NN_results.csv'
+PATH_CNN = 'CNN_results.csv'
 PATH_SVM = 'SVM_results.csv'
 
 TRAINING_FILE_PATH = 'Data/training.csv'
